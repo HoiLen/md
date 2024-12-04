@@ -33,3 +33,10 @@ public class JFrameTest extends JFrame {
 ```
 
 実行クラスで `JFrame` を継承し、コンストラクタでウィンドウの描画を行っている。
+
+```java
+//省略できるようになった
+//Container contentPane = getContentPane();
+//contentPane.add(btn,BorderLayout.SOUTH);
+```
+この部分は、`add()` は省略できるが、`setBackground()` などのメソッドでは `Container` クラスが必要になるので注意。
