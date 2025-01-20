@@ -7,10 +7,13 @@
 ## HTML/Servlet との比較
 * `HTML`
   
-    いったん記述すると、変更は直接HTMLを書き換える
+    いったん記述すると、変更は直接HTMLを書き換えないといけない
 * `Servlet`
   
-  `request.getWrighter()`を用いてHTMLを書き出すことができる
+  一応、`request.getWrighter()`を用いてHTMLを書き出すことができるが、HTMLの記述を1行書くたびに`out.println();`の記述が必要になり面倒。
+  
+  基本的にHTMLの記述のレスポンスはJSPに任せる
+
 * `JSP`
   
   通常の`HTML`の記述に加えて
