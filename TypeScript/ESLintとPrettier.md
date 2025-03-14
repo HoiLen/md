@@ -26,7 +26,7 @@
 
 ### .eslint.config.mjs
 
-```mjs
+```js
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import globals from 'globals';
 import tsParser from '@typescript-eslint/parser';
